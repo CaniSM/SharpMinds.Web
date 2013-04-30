@@ -16,6 +16,7 @@ namespace SharpMinds.Web
 
         protected void Page_Init(object sender, EventArgs e)
         {
+
             // The code below helps to protect against XSRF attacks
             var requestCookie = Request.Cookies[AntiXsrfTokenKey];
             Guid requestCookieGuidValue;
@@ -48,6 +49,10 @@ namespace SharpMinds.Web
 
         protected void master_Page_PreLoad(object sender, EventArgs e)
         {
+            // Bootstrap
+            base.OnLoad(e);
+            Page.Header.DataBind();
+
             if (!IsPostBack)
             {
                 // Set Anti-XSRF token
@@ -67,7 +72,7 @@ namespace SharpMinds.Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
