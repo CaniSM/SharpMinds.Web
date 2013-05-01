@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SharpMinds.Web
-{
-
-
-    public partial class _Default
-    {
+namespace SharpMinds.Web {
+    
+    
+    public partial class _Default {
     }
 }
