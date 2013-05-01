@@ -1,31 +1,24 @@
-﻿@font-face {
+﻿@font-face
+{
     font-family: Designosaur-Regular;
     src: url(fonts/Designosaur-Regular.ttf);
 }
 
-
-@font-face {
-    font-family: Press_Style;
-    src: url(fonts/PressStyle.ttf);
-}
-
-@font-face {
-    font-family: Lighthouse;
-    src: url(fonts/Lighthouse_PersonalUse.ttf);
-}
-
-#body {
+#body
+{
     padding-top: 31px;
 }
 
-body {
+body
+{
     /*background-color: #fff;
     border-top: solid 10px #000;
     color: #333;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.banner {
+.banner
+{
     height: 450px;
     padding-top: 150px;
     text-align: center;
@@ -38,17 +31,18 @@ body {
     @patternUrl: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png);
     @patternUrl: url(images/patterns/subtle-transparent-bgs/wood_pattern.png);
     @patternUrl: url(images/patterns/subtle-transparent-bgs/pool_table.png);
-    background-image: @patternUrl; /* fallback */
     background-image: @patternUrl, -webkit-gradient(linear, left top, left bottom, from(#000000), to(#7D19E1)); /* Saf4+, Chrome */
     background-image: @patternUrl, -webkit-linear-gradient(45deg, #000 0%, rgb(125, 25, 225) 100%); /* Chrome 10+, Saf5.1+ */
     background-image: @patternUrl, -moz-linear-gradient(45deg, #000 0%, rgb(125, 25, 225) 100%); /* FF3.6+ */
     background-image: @patternUrl, -ms-linear-gradient(45deg, #000 0%, rgb(125, 25, 225) 100%); /* IE10 */
     background-image: @patternUrl, -o-linear-gradient(45deg, #000 0%, rgb(125, 25, 225) 100%); /* Opera 11.10+ */
     background-image: @patternUrl, linear-gradient(45deg, #000 0%, rgb(125, 25, 225) 100%); /* W3C */
+    background-image: @patternUrl; /* fallback */
     background-repeat: repeat;
     opacity: 0.7;
 
-    h1 {
+    h1
+    {
         text-shadow: 4px 4px 8px rgb(0, 0, 0);
         /*font-family: Designosaur-Regular;*/
         letter-spacing: 10px;
@@ -56,12 +50,14 @@ body {
         line-height: 120px;
     }
 
-    p {
+    p
+    {
         font-size: 40px;
         line-height: 50px;
     }
 
-    #moreToCome {
+    #moreToCome
+    {
         padding-top: 40px;
         line-height: 1em;
         font-weight: bold;
@@ -69,10 +65,23 @@ body {
     }
 }
 
-.navbar {
+#alert_button
+{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100px;
+}
+
+.navbar
+{
     box-shadow: 0 8px 20px rgba(0,0,0,.9);
 
-    a:hover {
+    a:hover
+    {
         background: none;
     }
 }
