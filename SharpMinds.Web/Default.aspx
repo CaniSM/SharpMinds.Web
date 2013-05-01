@@ -5,27 +5,16 @@
         <div class="container">
             <h1>#Minds</h1>
             <p>IT Consultancy, webdesign, and solid back to front-end solutions for forward-thinking people.</p>
-            <a class="btn btn-large btn-link" href="mailto:cani@sharpminds.dk">Hire Us</a>
-            <a class="btn btn-large btn-link" href="mailto:cani@sharpminds.dk">Ask Us</a>
+            <div class="btn btn-large btn-info" onclick="location.href='mailto:cani@sharpminds.dk'">
+                Contact Us
+            </div>
+            <h2 id="moreToCome">More info coming soon!
+            </h2>
         </div>
     </div>
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1><%: Title %>.</h1>
-                <h2>Modify this template to jump-start your ASP.NET application.</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET, vixsit <a href="http://asp.net" title="ASP.NET Website">http://asp.net</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET.
-                If you have any questions about ASP.NET visit
-                <a href="http://forums.asp.net/18.aspx" title="ASP.NET Forum">our forums</a>.
-            </p>
-        </div>
-    </section>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h3>We suggest the following:</h3>
+    <%--<h3>We suggest the following:</h3>
     <ol class="round">
         <li class="one">
             <h5>Getting Started</h5>
@@ -43,5 +32,5 @@
             You can easily find a web hosting company that offers the right mix of features and price for your applications.
             <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
         </li>
-    </ol>
+    </ol>--%>
 </asp:Content>

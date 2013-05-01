@@ -50,7 +50,7 @@
                         <div class="nav-collapse collapse">
                             <ul class="nav">
                                 <li class="active"><a id="A1" runat="server" href="~/">Home</a></li>
-                                <li><a id="A2" runat="server" href="~/About">About</a></li>
+                                <%--<li><a id="A2" runat="server" href="~/About">About</a></li>--%>
                                 <li><a id="A3" runat="server" href="~/Contact">Contact</a></li>
                             </ul>
                         </div>
@@ -60,7 +60,7 @@
         </header>
         <div id="body">
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-            <section class="content-wrapper main-content clear-fix">
+            <section class="<%--content-wrapper main-content clear-fix--%>">
                 <asp:ContentPlaceHolder runat="server" ID="MainContent" />
             </section>
         </div>
