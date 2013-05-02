@@ -438,6 +438,8 @@
     <Content Include="Content\less\bootstrap.less" />
     <Content Include="Content\less\alerts.less" />
     <Content Include="Content\less\accordion.less" />
+    <Content Include="Content\fonts\OneDirection.ttf" />
+    <Content Include="Content\fonts\LEVIBRUSH.TTF" />
     <None Include="Properties\PublishProfiles\SharpMinds.dk.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

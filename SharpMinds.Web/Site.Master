@@ -15,7 +15,7 @@
     <script src="Scripts/SharpMinds.js" type="text/javascript"></script>
 </head>
 <body>
-   <form runat="server">
+    <form runat="server" style="margin-bottom: 0;">
         <%--<link type="text/css" rel="stylesheet" href="css/normalize.css" />--%>
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -48,7 +48,7 @@
                             <ul class="nav">
                                 <li class="active"><a id="A1" runat="server" href="~/">Home</a></li>
                                 <%--<li><a id="A2" runat="server" href="~/About">About</a></li>--%>
-                                <li><a id="A3" runat="server" href="~/Contact">Contact</a></li>
+                                <%--<li><a id="A3" runat="server" href="~/Contact">Contact</a></li>--%>
                             </ul>
                         </div>
                     </div>
@@ -57,13 +57,13 @@
         </header>
         <div id="body">
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-            <section class="<%--content-wrapper main-content clear-fix--%>">
+            <section class="content-wrapper main-content clear-fix">
                 <asp:ContentPlaceHolder runat="server" ID="MainContent" />
             </section>
         </div>
         <footer>
             <div class="content-wrapper">
-                <div class="float-left">
+                <div class="float-left" style="padding-top: 10px;">
                     <p>&copy; <%: DateTime.Now.Year %> - SharpMinds - CVR 35109234 - contact 22663370 - <a href="mailto:cani@sharpminds.dk">cani@sharpminds.dk</a></p>
                 </div>
             </div>
