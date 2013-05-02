@@ -15,7 +15,6 @@ html {
 html body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: transparent;
-  border-top: solid 10px #000;
   color: #333;
   font-size: .85em;
   margin: 0;
@@ -34,7 +33,7 @@ html footer {
 }
 body {
   background-color: transparent;
-  border-top: solid 10px #000;
+  border-top: none;
   color: #333;
   font-size: .85em;
   margin: 0;
@@ -46,7 +45,7 @@ footer {
   box-shadow: inset 0 4px 7px rgba(0, 0, 0, 0.3);
 }
 #body {
-  padding-top: 31px;
+  padding-top: 0;
   background-color: #fff;
   clear: both;
   padding-bottom: 35px;
@@ -91,8 +90,6 @@ footer {
   box-shadow: inset 0 -4px 7px rgba(0, 0, 0, 0.3);
 }
 .banner h1 {
-  /*font-family: Consolas, 'Lucida Console', 'DejaVu Sans Mono', monospace;*/
-
   letter-spacing: 10px;
   font-size: 150px;
   line-height: 120px;
@@ -149,7 +146,63 @@ hr.style-six {
 }
 .navbar {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  position: fixed;
+}
+.navbar .navbar-inner {
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .navbar a:hover {
   background: none;
+}
+/* RESPONSIVE DESIGN */
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .banner {
+    height: 450px;
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  }
+  body {
+    border-top: 0;
+  }
+  #body {
+    padding-top: 0px;
+    background-color: #fff;
+    clear: both;
+    padding-bottom: 35px;
+  }
+  .banner {
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .banner h1 {
+    letter-spacing: 10px;
+    font-size: 70px;
+    line-height: 100px;
+  }
+  .banner p {
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
