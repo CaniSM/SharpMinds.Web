@@ -30,10 +30,6 @@ html {
         clear: both;
         font-size: .8em;
         box-shadow: inset 0 4px 7px rgba(0,0,0,.3);
-        @patternUrl: url(images/patterns/subtle-transparent-bgs/cubes.png);
-        /*background: @patternUrl repeat center center;*/
-        /*background-image: @patternUrl;
-        background-repeat: repeat;*/
         padding-bottom: 0;
     }
 }
@@ -54,7 +50,7 @@ footer {
 }
 
 #body {
-    padding-top: 0;
+    padding-top: 40px;
     background-color: #fff;
     clear: both;
     padding-bottom: 35px;
@@ -77,7 +73,9 @@ footer {
     @patternUrl: url(images/patterns/subtle-transparent-bgs/xv.png);
     @patternUrl: url(images/patterns/subtle-transparent-bgs/white_brick_wall.png);
     */
+    background: black;
     @patternUrl: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#7D19E1'); /* for IE */
     background-image: @patternUrl; /* fallback */
     background-image: @patternUrl, -webkit-gradient(linear, left top, left bottom, from(#000000), to(#7D19E1)); /* Saf4+, Chrome */
     background-image: @patternUrl, -webkit-linear-gradient(45deg, #000 0%, rgb(125, 25, 225) 100%); /* Chrome 10+, Saf5.1+ */
@@ -90,6 +88,7 @@ footer {
 
 
     h1 {
+        color: white;
         letter-spacing: 10px;
         font-size: 150px;
         line-height: 120px;
@@ -195,7 +194,6 @@ hr.style-six {
     }
 
     #body {
-        padding-top: 0px;
         background-color: #fff;
         clear: both;
         padding-bottom: 35px;

@@ -12,10 +12,10 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
-    <script src="Scripts/SharpMinds.js" type="text/javascript"></script>
 </head>
 <body>
     <form runat="server" style="margin-bottom: 0;">
+        <script src="Scripts/SharpMinds/sharpminds-preload.js" type="text/javascript"></script>
         <%--<link type="text/css" rel="stylesheet" href="css/normalize.css" />--%>
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -44,11 +44,11 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="brand" href="/">SharpMinds</a>
-                        <div class="nav-collapse collapse">
+                        <div id="menu" class="nav-collapse collapse">
                             <ul class="nav">
-                                <li class="active"><a id="A1" runat="server" href="~/">Home</a></li>
-                                <%--<li><a id="A2" runat="server" href="~/About">About</a></li>--%>
-                                <%--<li><a id="A3" runat="server" href="~/Contact">Contact</a></li>--%>
+                                <li><a id="A1" runat="server" href="~/">Home</a></li>
+                                <li><a id="A2" runat="server" href="~/About">About</a></li>
+                                <li><a id="A3" runat="server" href="~/Contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,5 +69,7 @@
             </div>
         </footer>
     </form>
+    <script src="Scripts/SharpMinds/sharpminds.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
