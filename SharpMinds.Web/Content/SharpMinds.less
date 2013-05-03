@@ -24,6 +24,10 @@ html {
         font-size: .85em;
         margin: 0;
         padding: 0;
+
+        section {
+            padding: 30px;
+        }
     }
 
     footer {
@@ -53,7 +57,7 @@ footer {
     padding-top: 40px;
     background-color: #fff;
     clear: both;
-    padding-bottom: 35px;
+    padding-bottom: 0px;
 }
 
 @banner-height: 450px;
@@ -73,8 +77,11 @@ footer {
     @patternUrl: url(images/patterns/subtle-transparent-bgs/xv.png);
     @patternUrl: url(images/patterns/subtle-transparent-bgs/white_brick_wall.png);
     */
-    background: black;
     @patternUrl: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png);
+    @patternUrl: url(images/patterns/subtle-transparent-bgs/argyle.png);
+    @patternUrl: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png);
+
+    background: black;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#7D19E1'); /* for IE */
     background-image: @patternUrl; /* fallback */
     background-image: @patternUrl, -webkit-gradient(linear, left top, left bottom, from(#000000), to(#7D19E1)); /* Saf4+, Chrome */
@@ -99,6 +106,8 @@ footer {
         line-height: 50px;
     }
 }
+
+
 
 hr.style-one {
     border: 0;
@@ -137,13 +146,17 @@ hr.style-six {
 }
 
 #alert_button {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    left: 0;
+    position: fixed;
+    width: 20%;
+    opacity: 0.9;
+    left: 39%;
     right: 0;
-    top: 100px;
+    top: 65px;
+
+    p {
+        font-size: 14px;
+        line-height: 14px;
+    }
 }
 
 .navbar {
@@ -186,7 +199,6 @@ hr.style-six {
 /* Landscape phones and down */
 @media (max-width: 480px) {
     .navbar {
-        
     }
 
     body {

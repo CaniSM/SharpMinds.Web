@@ -20,6 +20,9 @@ html body {
   margin: 0;
   padding: 0;
 }
+html body section {
+  padding: 30px;
+}
 html footer {
   clear: both;
   font-size: .8em;
@@ -43,7 +46,7 @@ footer {
   padding-top: 40px;
   background-color: #fff;
   clear: both;
-  padding-bottom: 35px;
+  padding-bottom: 0px;
 }
 .banner {
   height: 450px;
@@ -64,25 +67,25 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#7D19E1');
   /* for IE */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png);
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png);
   /* fallback */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png), -webkit-gradient(linear, left top, left bottom, from(#000000), to(#7d19e1));
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png), -webkit-gradient(linear, left top, left bottom, from(#000000), to(#7d19e1));
   /* Saf4+, Chrome */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png), -webkit-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png), -webkit-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
   /* Chrome 10+, Saf5.1+ */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png), -moz-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png), -moz-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
   /* FF3.6+ */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png), -ms-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png), -ms-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
   /* IE10 */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png), -o-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png), -o-linear-gradient(45deg, #000000 0%, #7d19e1 100%);
   /* Opera 11.10+ */
 
-  background-image: url(images/patterns/subtle-transparent-bgs/diagonal_striped_brick.png), linear-gradient(45deg, #000000 0%, #7d19e1 100%);
+  background-image: url(images/patterns/subtle-transparent-bgs/wood_pattern_trans.png), linear-gradient(45deg, #000000 0%, #7d19e1 100%);
   /* W3C */
 
   background-repeat: repeat;
@@ -136,13 +139,16 @@ hr.style-six {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 #alert_button {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  left: 0;
+  position: fixed;
+  width: 20%;
+  opacity: 0.9;
+  left: 39%;
   right: 0;
-  top: 100px;
+  top: 65px;
+}
+#alert_button p {
+  font-size: 14px;
+  line-height: 14px;
 }
 .navbar {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
